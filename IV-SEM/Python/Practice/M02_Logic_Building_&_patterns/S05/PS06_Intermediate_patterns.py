@@ -34,7 +34,51 @@ output:
 #  * * * 
 #   * * 
 #    *
-n = int(input())
-for i in range(n,0, -1):
-    print(" "*(n-i)+ "* "*i)
+# n = int(input())
+# for i in range(n,0, -1):
+#     print(" "*(n-i)+ "* "*i)
+#  3. Diamond 
+#   n  = 4 
+# output:
+#     * 
+#    * *
+#   * * *
+#  * * * * 
+#   * * *
+#    * *
+#     *
+
+# n = int(input())
+# for  i in range(1, n):
+#     print(" "*(n-i)+ "* "*i)
+# for i in range(n,0, -1):
+#     print(" "*(n-i)+ "* "*i)
+
+'''
+number pyramid'''
+# n = int(input())
+# for i in range(1, n+1):
+#     print(" "*(n - i),end=" " )
+#     for j in range(1,i+1):
+#         print(j, end=" ")
+#     print()
+
+# n = int(input())
+# for i in range(1, n+1):
+#     print(" "*(n - i),end=" " )
+#     for j in range(1, i+1):
+#         print(i, end=" ")
+#     print()
+
+# or/
+
+n =  int(input())
+for i in range(1, n+1):
+    print(" "*(n-1)+" ".join([str(k) for k in range(1, i+1)]))
+ 
+
+    
+# Floyd's triangle
+
+
 
